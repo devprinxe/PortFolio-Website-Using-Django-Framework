@@ -65,3 +65,5 @@ class Portfolio(models.Model):
     image = models.ImageField(max_length=255)
     url = models.URLField(max_length=200)
     name = models.CharField(max_length=255)
+
+
