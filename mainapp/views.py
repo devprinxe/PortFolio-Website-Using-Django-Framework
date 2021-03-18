@@ -12,4 +12,5 @@ def home(request):
     review = Testimonial.objects.all()
     cv = Resume.objects.all()
     client = Fact.objects.all()
-    return render(request, "index.html", {'social': social,'information': information, 'webinfo':webinfo, 'review': review, 'cv': cv, 'client': client}) 
+    work = Portfolio.objects.all()
+    return render(request, "index.html", {'social': social,'information': information, 'webinfo':webinfo, 'review': review, 'cv': cv, 'client': client, 'work': work}) 

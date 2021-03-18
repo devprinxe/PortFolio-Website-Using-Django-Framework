@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 
 class SocialMediaLinks(models.Model):
@@ -15,6 +16,9 @@ class PersonalInformation(models.Model):
     website = models.URLField(max_length=200, null=True, blank=True)
     city = models.CharField(max_length=200)
     role = models.CharField(max_length=200)
+    degree = models.CharField(max_length=200, null=True, blank=True)
+    availiability = models.CharField(max_length=200, null=True, blank=True)
+    phone = models.IntegerField(max_length=200, null=True, blank=True)
     birhtday = models.DateField()
     age = models.IntegerField()
     aboutme = models.TextField()

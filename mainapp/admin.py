@@ -24,8 +24,6 @@ class Cat(admin.ModelAdmin):
 
 class Port(admin.ModelAdmin):
     list_display = ('name', 'category', 'image')
-    def category(self, instance):
-        return instance.Category.title
 
 admin.site.register(PersonalInformation, Personal)
 admin.site.register(SocialMediaLinks, Social)
